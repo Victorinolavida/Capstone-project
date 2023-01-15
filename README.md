@@ -1,19 +1,19 @@
 # Capstone-project
-Capstone project from Meta backend developer 
 
-## url availeble
+Capstone project from Meta backend developer
 
-## restaurant/menu 
-return all menu items
+## urls available
 
-## restaurant/menu/<int:pk>
-return (if exist) a item menu by id
+- **GET:** `restaurant/menu`: return all menu items
 
-## restaurant/booking/tables/
-return booking items (you must be have a token)
+- `restaurant/menu/<int:pk>`
 
-## auth/users/
-create new user
+  - GET: return item by id
+  - PUT: update a item by id
+  - DELETE: delete the item with that id
 
-## auth/token/login
-generate a token for a user
+- **GET:** `restaurant/booking/tables/`:return booking items (you must be have a token)
+
+- **POST:** `auth/users/`: create new user
+
+- **POST:**`auth/token/login`: generate a token for a user

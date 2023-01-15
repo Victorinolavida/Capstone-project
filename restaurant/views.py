@@ -13,6 +13,9 @@ from rest_framework.response import Response
 def sayHello(request):
     return HttpResponse("hola mundo")
 
+def home(request):
+    return render(request,'home.html',{})
+
 def index(request):
     return render(request, 'index.html', {})
 

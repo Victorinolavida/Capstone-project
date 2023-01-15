@@ -6,6 +6,37 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Capstone Project</title>
+  <style>
+    .links {
+      display: flex;
+      flex-direction: column;
+      column-gap: 10px;
+      width: 50vw;
+      margin: auto;
+      padding: 5px;
+    }
+
+    .links a:link,
+    .links a:visited {
+      text-decoration: none;
+      display: block;
+      color: blue;
+      font-size: 1.2rem;
+    }
+
+    .links a:active,
+    .links a:hover {
+      text-decoration: none;
+      display: block;
+      color: black;
+      font-size: 1.2rem;
+    }
+
+    .links a:link:not(:last-child),
+    .links a:visited h2 {
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
 
 <body>
@@ -13,6 +44,20 @@
   <!--add this template tag-->
   {% load static %}
   <img src="{% static 'restaurant/littlelemon.png' %}">
+
+
+  <div class="links">
+    <h2>urls available</h2>
+
+    <a href="menu">return all menu items</a>
+    <a href="booking/tables/">return booking items (you must be have a token)</a>
+    <a href="/auth/users/">register</a>
+    <a href="/auth/token/login">login</a>
+
+  </div>
+
+
+
 </body>
 
 </html>
